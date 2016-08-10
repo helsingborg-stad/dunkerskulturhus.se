@@ -38,6 +38,10 @@
             "url": "https://github.com/helsingborg-stad/content-scheduler.git"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/helsingborg-stad/force-ssl.git"
+        },
+        {
             "type":"composer",
             "url":"https://wpackagist.org"
         }
@@ -53,6 +57,7 @@
         "helsingborg-stad/open-hours": ">=1.0.0",
         "helsingborg-stad/custom-short-links": ">=1.0.0",
         "helsingborg-stad/content-scheduler": ">=1.0.0",
+        "helsingborg-stad/force-ssl": ">=1.0.0",
         "wpackagist-plugin/wp-editor-widget": "^0.5.5",
         "wpackagist-plugin/all-in-one-seo-pack": "^2.2.7.5",
         "wpackagist-plugin/varnish-http-purge": "^3.7.2",
