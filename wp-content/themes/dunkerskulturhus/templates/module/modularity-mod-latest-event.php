@@ -8,8 +8,8 @@
 <div class="grid">
     <?php
     foreach ($posts as $post) :
-
-        $image = get_field('event-image_url', $post->ID);
+        $image = get_post_thumbnail_id($post->ID);
+        $image = wp_get_attachment_url($image);
     ?>
     <div class="<?php echo (isset($fields->item_column_size) && !empty($fields->item_column_size)) ? $fields->item_column_size : 'grid-md-3' ?>">
         <a href="<?php echo get_permalink($post->ID); ?>" class="box box-news">
