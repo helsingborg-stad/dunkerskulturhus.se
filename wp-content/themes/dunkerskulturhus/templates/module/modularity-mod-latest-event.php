@@ -9,7 +9,10 @@
     <?php
     foreach ($posts as $post) :
         $image = get_post_thumbnail_id($post->ID);
-        $image = wp_get_attachment_url($image);
+        if (is_numeric($image)) {
+            $image = wp_get_attachment_image_src($image, 300, 300);
+            $image = $image[0];
+        }
     ?>
     <div class="<?php echo (isset($fields->item_column_size) && !empty($fields->item_column_size)) ? $fields->item_column_size : 'grid-md-3' ?>">
         <a href="<?php echo get_permalink($post->ID); ?>" class="box box-news">
