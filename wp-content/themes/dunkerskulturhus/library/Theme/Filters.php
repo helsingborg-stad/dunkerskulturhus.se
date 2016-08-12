@@ -32,6 +32,22 @@ class Filters
 
         // Sidebar WpWidget module
         add_filter('Modularity/Module/WpWidget/before', array($this, 'wpWidgetBefore'), 11, 3);
+
+        //Body classes (removing material design, this is flat)
+        add_filter('body_class', array($this, 'wpAddBodyClass'));
+    }
+
+    /**
+     * Remove material design with class
+     * @return array
+     */
+    public function wpAddBodyClass($classes)
+    {
+        if (is_array($classes)) {
+            $classes[] = "material-no-radius";
+            $classes[] = "material-no-shadow";
+        }
+        return $classes;
     }
 
     public function wpWidgetBefore($before, $sidebarArgs, $module)
