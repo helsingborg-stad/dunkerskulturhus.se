@@ -1452,59 +1452,60 @@ html.translated-ltr #site-header {
   .is-child-theme .nav-mobile-menu .search label {
     display: none; }
 
-.is-child-theme .pagination,
-.is-child-theme .page-numbers {
-  font-size: 0; }
-  .is-child-theme .pagination li,
-  .is-child-theme .page-numbers li {
-    display: inline-block; }
-    .is-child-theme .pagination li + li,
-    .is-child-theme .page-numbers li + li {
-      margin-left: 5px; }
-  .is-child-theme .pagination a,
-  .is-child-theme .pagination .current,
-  .is-child-theme .page-numbers a,
-  .is-child-theme .page-numbers .current {
-    display: block;
-    border: 2px solid #1E1E1E;
-    font-size: .85em;
-    font-weight: bold;
-    text-align: center;
-    color: #1E1E1E;
-    padding-left: 12px;
-    padding-right: 12px;
-    height: 35px;
-    line-height: 32px;
-    -webkit-transition: 100ms all;
-            transition: 100ms all; }
-    .is-child-theme .pagination a:hover, .is-child-theme .pagination a:focus, .is-child-theme .pagination a.current,
-    .is-child-theme .pagination .current:hover,
-    .is-child-theme .pagination .current:focus,
-    .is-child-theme .pagination .current.current,
-    .is-child-theme .page-numbers a:hover,
-    .is-child-theme .page-numbers a:focus,
-    .is-child-theme .page-numbers a.current,
-    .is-child-theme .page-numbers .current:hover,
-    .is-child-theme .page-numbers .current:focus,
-    .is-child-theme .page-numbers .current.current {
-      background-color: #1E1E1E;
-      border-color: #1E1E1E;
-      color: #fff;
-      text-decoration: none; }
-  .is-child-theme .pagination a:not(.next):not(.prev),
-  .is-child-theme .page-numbers a:not(.next):not(.prev) {
-    width: 35px;
-    height: 35px;
-    line-height: 32px;
-    padding: 0; }
-  .is-child-theme .pagination .ellipsis:after,
-  .is-child-theme .page-numbers .ellipsis:after {
-    content: "…";
-    display: inline-block; }
-  .is-child-theme .pagination .dots,
-  .is-child-theme .page-numbers .dots {
-    display: block;
-    font-size: .85em; }
+.is-child-theme .pagination li,
+.is-child-theme .page-numbers li {
+  display: inline-block; }
+  .is-child-theme .pagination li + li,
+  .is-child-theme .page-numbers li + li {
+    margin-left: 5px; }
+
+.is-child-theme .pagination a,
+.is-child-theme .pagination .current,
+.is-child-theme .page-numbers a,
+.is-child-theme .page-numbers .current {
+  display: block;
+  border: 2px solid #1E1E1E;
+  font-size: .85em;
+  font-weight: bold;
+  text-align: center;
+  color: #1E1E1E;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 35px;
+  line-height: 32px;
+  -webkit-transition: 100ms all;
+          transition: 100ms all; }
+  .is-child-theme .pagination a:hover, .is-child-theme .pagination a:focus, .is-child-theme .pagination a.current,
+  .is-child-theme .pagination .current:hover,
+  .is-child-theme .pagination .current:focus,
+  .is-child-theme .pagination .current.current,
+  .is-child-theme .page-numbers a:hover,
+  .is-child-theme .page-numbers a:focus,
+  .is-child-theme .page-numbers a.current,
+  .is-child-theme .page-numbers .current:hover,
+  .is-child-theme .page-numbers .current:focus,
+  .is-child-theme .page-numbers .current.current {
+    background-color: #1E1E1E;
+    border-color: #1E1E1E;
+    color: #fff;
+    text-decoration: none; }
+
+.is-child-theme .pagination a:not(.next):not(.prev),
+.is-child-theme .page-numbers a:not(.next):not(.prev) {
+  width: 35px;
+  height: 35px;
+  line-height: 32px;
+  padding: 0; }
+
+.is-child-theme .pagination .ellipsis:after,
+.is-child-theme .page-numbers .ellipsis:after {
+  content: "…";
+  display: inline-block; }
+
+.is-child-theme .pagination .dots,
+.is-child-theme .page-numbers .dots {
+  display: block;
+  font-size: .85em; }
 
 .is-child-theme .nav-aside {
   background-color: #1E1E1E;
