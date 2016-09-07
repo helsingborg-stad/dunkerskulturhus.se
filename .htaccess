@@ -22,8 +22,7 @@ RedirectMatch 301 /admin/(.*) /wp/wp-admin/$1
     RewriteEngine On
     RewriteCond %{REQUEST_METHOD} POST
     RewriteCond %{REQUEST_URI} .(wp-comments-post|wp-login)\.php*
-    RewriteCond %{HTTP_REFERER} !.*dunkerskulturhus.se.* [AND]
-    RewriteCond %{HTTP_REFERER} !.*dunkerskulturhus.dev.*
+    RewriteCond %{HTTP_REFERER} !.*dunkerskulturhus.se.*
     RewriteCond %{HTTP_USER_AGENT} ^$
     RewriteRule (.*) http://%{REMOTE_ADDR}/$1 [R=301,L]
 </ifModule>
