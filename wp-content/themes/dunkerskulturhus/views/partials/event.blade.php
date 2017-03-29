@@ -20,6 +20,10 @@
             @if ($post->occations_count > 1)
             <em style="font-style:italic;">(och {{ $post->occations_count }} andra tillfällen)</em>
             @endif
+
+            @if ($post->occations_count == 1)
+            <em style="font-style:italic;">(och {{ $post->occations_count }} annat tillfälle)</em>
+            @endif
         </span>
         <h3 class="event-title">{{ the_title() }}</h3>
     </div>
