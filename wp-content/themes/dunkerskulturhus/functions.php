@@ -14,3 +14,15 @@ $loader->addPrefix('Dunkers', DUNKERS_PATH . 'source/php/');
 $loader->register();
 
 new Dunkers\App();
+
+/* Polyfill for new municipio view */
+if (!function_exists('municipio_to_aspect_ratio')) {
+    function municipio_to_aspect_ratio($ratio, $size)
+    {
+        if (count($ratio = explode(":", $ratio)) == 2) {
+            $width  = round($size[0]);
+            $height = round(($width / $ratio[0]) * $ratio[1]);
+        }
+        return array($width, $height);
+    }
+}
