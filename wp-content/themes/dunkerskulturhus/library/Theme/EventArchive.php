@@ -111,7 +111,7 @@ class EventArchive
             $query->set('meta_query', array(
                 'relation' => 'AND',
                 array(
-                    'key'     => 'event-date-start',
+                    'key'     => 'event-date-end',
                     'value'   => date('Y-m-d H:i:s'),
                     'compare' => '>=',
                 )
