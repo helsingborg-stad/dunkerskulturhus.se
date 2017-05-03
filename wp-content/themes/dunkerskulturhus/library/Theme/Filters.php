@@ -16,7 +16,7 @@ class Filters
         add_filter('Municipio/search_result/date', array($this, 'eventDate'), 10, 2);
 
         //Remove base-theme filters
-        add_action('init', array($this, 'unregisterMunicipioImageFilter'));
+        add_filter('Modularity/slider/image', array($this, 'overrideSliderImageSize'), 500);
 
         add_filter('Modularity/Module/Classes', function ($classes, $moduleType, $sidebarArgs) {
             if ($key = array_search('box-filled', $classes)) {
@@ -102,9 +102,9 @@ class Filters
      * Unregister built in image sizes. Use modularity
      * @return void
      */
-    public function unregisterMunicipioImageFilter()
+    public function overrideSliderImageSize($size)
     {
-        \Municipio\Theme\ImageSizeFilter::removeFilter('Modularity/slider/image', 'filterHeroImageSize', 100);
+        return array(1300,731);
     }
 
     /**
