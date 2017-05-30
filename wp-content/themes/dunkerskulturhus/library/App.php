@@ -16,6 +16,8 @@ class App
             }
             return $controller;
         });
+        // Remove canonical redirect, else short links wont work
+        remove_filter('template_redirect', 'redirect_canonical');
     }
 
     public function eventArchive()
