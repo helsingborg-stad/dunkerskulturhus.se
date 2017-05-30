@@ -59,6 +59,7 @@ class EventArchive
             $where = " AND eventStart.meta_key = 'event-date-start' AND eventEnd.meta_key = 'event-date-end' " . $where;
             $where = str_replace($wpdb->posts . '.post_date >=', 'eventStart.meta_value >=', $where);
             $where = str_replace($wpdb->posts . '.post_date <=', 'eventEnd.meta_value <=', $where);
+            $where = preg_replace("/((?:eventEnd.meta_value <= ')(?:\d{4}-\d{2}-\d{2}))/i", "$1 23:59", $where);
         }
 
         return $where;
