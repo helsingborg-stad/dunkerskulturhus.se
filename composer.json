@@ -32,7 +32,7 @@
         "helsingborg-stad/force-ssl": ">=1.0.0",
         "wpackagist-plugin/wp-editor-widget": "^0.5.5",
         "wpackagist-plugin/all-in-one-seo-pack": "^2.2.7.5",
-        "wpackagist-plugin/varnish-http-purge": "^3.7.2",
+        "wpackagist-plugin/varnish-http-purge": ">=4.3.1",
         "wpackagist-plugin/stream": "^3.0.4",
         "wpackagist-plugin/wp-nested-pages": "^1.5.4",
         "wpackagist-plugin/rest-api": "2.0-beta13"
