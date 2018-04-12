@@ -6,6 +6,7 @@
 
 # Plugins
 /wp-content/plugins/*
+wp-content/mu-plugins/attachmentDownloader.php
 
 # Themes
 /wp-content/themes/*
