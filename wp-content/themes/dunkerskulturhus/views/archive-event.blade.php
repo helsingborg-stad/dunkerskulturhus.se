@@ -13,7 +13,7 @@
 
     @include('partials.archive-filters')
 
-    <div class="grid">
+   {{--  <div class="grid">
         <div class="grid-sm-12">
             <nav id="show-filters" class="navbar navbar-event-categories">
                 <a href="#show-filters" class="event-categories-filter">Filtrera</a>
@@ -38,7 +38,7 @@
                 !!}
             </nav>
         </div>
-    </div>
+    </div> --}}
 
     <div class="grid">
         <div class="grid-md-12">
