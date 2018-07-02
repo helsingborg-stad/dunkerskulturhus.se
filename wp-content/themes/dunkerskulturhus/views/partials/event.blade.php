@@ -7,7 +7,7 @@
     }
 
 ?>
-<a href="{{ the_permalink() }}" class="box box-event">
+<a href="{{ esc_url(add_query_arg('date', preg_replace('/\D/', '', $post->start_date), the_permalink())) }}" class="box box-event">
     @if ($image)
     <span class="box-image" style="background-image:url('{{ $image }}');">
         <img src="{{ $image }}" alt="{{ get_the_title() }}">
