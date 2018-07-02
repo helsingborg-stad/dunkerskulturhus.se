@@ -19,7 +19,7 @@
         <ul>
             <li class="has-text-block">
                 <div class="slider-image" style="background-image:url('{{ $image }}');">
-                    <span class="text-block">{{ the_title() }}<br>{{ \Municipio\Helper\Dt::toStringFormat(strtotime(get_field('event-date-start'))) }}</span>
+                    <span class="text-block">{{ the_title() }}<br>{{ \Municipio\Helper\Dt::toStringFormat(strtotime($occasion['start_date'])) }}</span>
                 </div>
             </li>
         </ul>
@@ -48,7 +48,7 @@
                 <div class="box-content">
                     <p>
                         <strong>Evenemanget äger rum:</strong><br>
-                        Den {{ \Municipio\Helper\Dt::toStringFormat(strtotime(get_field('event-date-start'))) }}
+                        Den {{ \Municipio\Helper\Dt::toStringFormat(strtotime($occasion['start_date'])) }}
                     </p>
                 </div>
             </div>
@@ -61,9 +61,9 @@
                         </p>
                         <p>
                             <ul>
-                                @foreach ($occations as $occation)
+                                @foreach ($occations as $eventOccation)
                                     <li>
-                                        <a class="link-item link-item-light" href="{{ get_permalink($occation->ID) }}">{{ \Municipio\Helper\Dt::dateWithTime(strtotime(get_field('event-date-start', $occation->ID))) }}</a>
+                                        <a class="link-item link-item-light" href="{{ esc_url(add_query_arg('date', preg_replace('/\D/', '', $eventOccation->start_date), the_permalink())) }}">{{ \Municipio\Helper\Dt::dateWithTime(strtotime($eventOccation->start_date)) }}</a>
                                     </li>
                                 @endforeach
                             </ul>
