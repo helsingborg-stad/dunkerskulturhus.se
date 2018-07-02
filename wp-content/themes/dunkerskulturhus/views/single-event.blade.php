@@ -40,8 +40,8 @@
         </div>
 
         <aside class="grid-lg-3 grid-md-12 sidebar-right-sidebar">
-            @if (is_string(get_field('event-ticket_url')) && get_field('event-ticket_url'))
-            <a href="{{ get_field('event-ticket_url') }}" target="_blank" class="btn btn-green btn-block btn-lg">Köp biljetter</a>
+            @if (is_string(get_field('booking_link')) && get_field('booking_link'))
+            <a href="{{ get_field('booking_link') }}" target="_blank" class="btn btn-green btn-block btn-lg">Köp biljetter</a>
             @endif
 
             <div class="box box-filled">
