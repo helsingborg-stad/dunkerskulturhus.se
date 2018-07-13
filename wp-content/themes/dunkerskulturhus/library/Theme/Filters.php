@@ -35,6 +35,27 @@ class Filters
 
         //Body classes (removing material design, this is flat)
         add_filter('body_class', array($this, 'wpAddBodyClass'));
+
+
+        add_filter('acf/load_field/name=footer_layout', array($this, 'addDunkersLayoutOption'));
+        add_filter('acf/load_field/name=header_layout', array($this, 'addDunkersLayoutOption'));
+        add_filter('Views/Partials/Header/HeaderClass', array($this, 'addHeaderClass'));
+    }
+
+    public function addHeaderClass($class)
+    {
+        $class .= ' header-casual';
+
+        return $class;
+    }
+
+    public function addDunkersLayoutOption($field)
+    {
+        if (get_field('theme_mode', 'options') >= 2) {
+            $field['choices']['dunkers'] = 'Dunkers (Child theme template)';
+        }
+
+        return $field;
     }
 
     /**
@@ -113,7 +134,7 @@ class Filters
      */
     public function mobileMenuBreakpoint($classes)
     {
-        return "hidden-lg";
+        return "hidden-md hidden-lg hidden-xl hidden-xxl";
     }
 
     /**
@@ -122,7 +143,7 @@ class Filters
      */
     public function desktopMenuBreakpoint($classes)
     {
-        return "hidden-xs hidden-sm hidden-md";
+        return "hidden-xs hidden-sm";
     }
 
     /**
