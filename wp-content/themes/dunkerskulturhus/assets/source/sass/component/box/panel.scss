@@ -1,6 +1,5 @@
 .box-panel {
     border: 1px solid #ddd;
-    padding: 10px;
 
     .box-title,
     .widgettitle,
@@ -21,6 +20,7 @@
         text-transform: uppercase;
         letter-spacing: .05em;
         font-weight: bold;
+        padding: 24px 24px 8px 24px;
 
         a {
             color: $base-font-color;
@@ -30,6 +30,10 @@
     .box-content {
         background-color: #fff;
         border: none;
+        padding: 24px;
+
+    }
+    .box-title + .box-content {
         padding-top: 0;
     }
 
@@ -40,7 +44,7 @@
     tfoot,
     tr,
     td {
-        border: none;
+        border: none !important;
     }
 
     /*
@@ -64,6 +68,9 @@
 }
 
 .box-panel-secondary {
+    nav {
+        margin-top: 8px;
+    }
     .box-title,
     .widgettitle,
     > h1,
@@ -81,7 +88,11 @@
         background-color: $black !important;
         color: #fff;
         border-bottom: 0;
-        padding: 10px 15px;
+        padding: 8px 16px;
+    }
+
+    .box-title + .box-content {
+        padding-top: 16px;
     }
 }
 

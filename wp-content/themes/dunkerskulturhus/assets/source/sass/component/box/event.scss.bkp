@@ -5,7 +5,7 @@
     border: 2px solid #000;
     color: $black;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     height: 290px;
 
     .box-image {

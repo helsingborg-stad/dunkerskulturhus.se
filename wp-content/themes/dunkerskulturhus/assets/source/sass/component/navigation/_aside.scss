@@ -23,22 +23,6 @@
         }
     }
 
-    .current,
-    .current-node {
-        background-color: transparent;
-
-        &.has-children > a::after {
-            @include hbg-icon('\f107');
-            font-size: 1.4em;
-            color: $green;
-            top: 10px;
-        }
-
-        a:before {
-            display: none;
-        }
-    }
-
     .has-children > a::after,
     .page_item_has_children > a::after {
         top: 12px;
@@ -47,7 +31,6 @@
 
     .children,
     .sub-menu {
-        display: none;
         background-color: lighten($black, 10%);
         border: none;
 
@@ -79,8 +62,13 @@
         }
     }
 
-    .current > .sub-menu,
-    .current-node > .sub-menu {
-        display: block;
+    [data-load-submenu] {
+        outline: 0;
+        background-color: initial !important;
+        .icon:after {
+            color: white;
+            font-size: 12px;
+            vertical-align: -33%;
+        }
     }
 }

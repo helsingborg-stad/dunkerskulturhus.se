@@ -87,9 +87,9 @@
         position: relative;
         background-color: $black;
         color: #fff !important;
-        padding: 60px 40px;
+        padding: 64px 40px;
         font-size: 6em;
-        border-radius: 20px;
+        border-radius: 24px;
         font-weight: bold !important;
         line-height: 1;
 
@@ -117,10 +117,10 @@
     }
 
     .actions {
-        margin-top: 30px;
+        margin-top: 32px;
     }
 
-    a:not(.btn) {
+    a:not(.btn, .no-link) {
         color: $black;
     }
 }

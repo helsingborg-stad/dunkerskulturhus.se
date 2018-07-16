@@ -3,7 +3,7 @@
     width: 100%;
     margin-top: 0;
 
-    @media screen and (max-width: #{$screen-lg-max}) and (min-width: #{$screen-lg-min}) {
+    @media screen and (max-width: #{$screen-md-max}) and (min-width: #{$screen-md-min}) {
         text-align: center;
         display: block;
     }
@@ -14,7 +14,7 @@
         line-height: 1;
 
         @media #{$screen-below-sm} {
-            padding-right: 20px;
+            padding-right: 24px;
 
             img, svg {
                 width: 100% !important;
@@ -23,13 +23,13 @@
             }
         }
 
-        @media screen and (max-width: #{$screen-lg-max}) and (min-width: #{$screen-lg-min}) {
+        @media screen and (max-width: #{$screen-md-max}) and (min-width: #{$screen-md-min}) {
             margin: 5px auto;
             display: inline-block !important;
         }
 
         img {
-            max-height: 30px;
+            max-height: 32px;
         }
     }
 
@@ -61,7 +61,7 @@
 #main-menu {
     text-align: right;
 
-    @media screen and (max-width: #{$screen-lg-max}) and (min-width: #{$screen-lg-min}) {
+    @media screen and (max-width: #{$screen-md-max}) and (min-width: #{$screen-md-min}) {
         clear: both;
         display: block;
         text-align: center;
@@ -116,11 +116,11 @@
             margin-bottom: 4px;
             text-decoration: none;
 
-            @media screen and #{$screen-lg} {
+            @media screen and #{$screen-md} {
                 line-height: 1.3em;
             }
 
-            @media screen and (min-width: #{$screen-lg-max}) {
+            @media screen and (min-width: #{$screen-md-max}) {
                 padding: 1px 12px 2px !important;
                 line-height: 1.6em;
             }

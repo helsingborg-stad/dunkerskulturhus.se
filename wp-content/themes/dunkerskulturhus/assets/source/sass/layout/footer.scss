@@ -2,9 +2,17 @@ footer.main-footer {
     font-family: $dunkers-font-family;
 	background: rgb(30,30,30);
     border-top: 1px solid $gray;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-top: 60px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-top: 64px;
+    font-size: .9rem;
+
+    color: #fff;
+
+    &,
+    & a {
+        color: #fff;
+    }
 
     &:after {
       content: "";
@@ -13,12 +21,12 @@ footer.main-footer {
       background-repeat: no-repeat;
       background-size: contain;
       display: block;
-      height: 60px;
+      height: 64px;
       margin-top: 40px;
     }
 
     @media screen and #{$screen-below-sm} {
-      padding-top: 30px;
+      padding-top: 32px;
     }
 
     .logotype {
@@ -33,7 +41,7 @@ footer.main-footer {
         @media screen and #{$screen-below-sm} {
           width: 100%;
           height: auto;
-          margin: 0 auto 30px auto;
+          margin: 0 auto 32px auto;
           display: block;
         }
 
@@ -149,4 +157,36 @@ footer.main-footer {
   100% {
     transform:  rotate(0deg) ;
   }
+}
+
+
+.main-footer {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: $baseline * 1.5;
+        margin-top: $baseline * 5;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    p {
+        margin-bottom: $baseline * 2.5;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }

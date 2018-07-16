@@ -1,6 +1,11 @@
+.header-dunkers .navbar {
+    text-rendering: auto;
+    font-weight: 300;
+}
+
 .search-top {
     background-color: $black;
-    padding: 20px 0;
+    padding: 24px 0;
 
     form {
         label {
@@ -122,14 +127,14 @@
     }
 
     nav.navbar {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 }
 
 &.home .site-header.header-casual .navbar-mainmenu.navbar {
     background-color: transparent;
-    padding: 15px 0;
+    padding: 16px 0;
 
     .current-page-ancestor a::after,
     .current_page_item a::after {

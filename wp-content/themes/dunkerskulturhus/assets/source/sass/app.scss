@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
 
+@import '../../../node_modules/hbg-mix/source/hbg-mix';
+
 @import 'config/colors';
 @import 'config/icons';
 @import 'config/typography';
@@ -46,6 +48,26 @@
     @import 'utility/link-item';
     @import 'utility/headings';
     @import 'utility/forms';
+
+    h1.archive__title {
+        margin-bottom: 24px;
+    }
+    .slider .text-block.text-block-center span,
+    .main-footer {
+        font-weight: 300;
+    }
+
+    .c-article + * {
+        margin-top: $baseline * 4;
+    }
+
+    .modularity-mod-iframe .box-title + * {
+        margin-top: $baseline * 1.5;
+    }
+
+    .nav-aside a, .nav-mobile a {
+        padding: 8px 0;
+    }
 }
 
 .home .sidebar-content-area .box {
