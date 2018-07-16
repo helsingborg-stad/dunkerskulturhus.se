@@ -17,7 +17,9 @@
 
     @if (strlen($navigation['mobileMenu']) > 0)
         <nav id="mobile-menu" class="nav-mobile-menu nav-toggle {!! apply_filters('Municipio/mobile_menu_breakpoint','hidden-md hidden-lg'); !!}">
-            @include('partials.mobile-menu')
+            <div class="container u-p-0">
+                @include('partials.mobile-menu')
+            </div>
         </nav>
     @endif
 @stop

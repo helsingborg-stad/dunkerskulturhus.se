@@ -1,11 +1,35 @@
 @extends('templates.single')
 
-@section('before-layout')
-    @if ($singleHeroImage)
-        <div class="hero o-overlay hidden-xs hidden-sm" style="background-image:url('{{ $singleHeroImage }}');">
-            <span class="text-block">{{ the_title() }}<br>{{ \Municipio\Helper\Dt::toStringFormat(strtotime($occasion['start_date'])) }}</span>
-        </div>
+@section('hero')
+    <div class="hero hidden-xs hidden-sm u-pl-0">
+    @if (is_active_sidebar('slider-area'))
+        {{ dynamic_sidebar('slider-area') }}
     @endif
+
+    @if (is_front_page() && get_field('front_page_hero_search', 'option') === true)
+        {{ get_search_form() }}
+    @endif
+
+    @if ($singleHeroImage)
+
+            <div class="o-overlay">
+            <div class="slider  ratio-16-9@md ratio-10-3">
+                <div class="slide o-cover"  style="background-image:url('{{ $singleHeroImage }}');">
+                    <div>
+                        <span class="text-block">{{ the_title() }}<br>{{ \Municipio\Helper\Dt::toStringFormat(strtotime($occasion['start_date'])) }}
+                        </span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    @endif
+
+    <a href="#main-content" class="scroll-down-please">
+        <div class="scroll-down-please-icon"></div>
+        Scrolla ner
+    </a>
+    </div>
 @stop
 
 @section('above')
@@ -19,9 +43,9 @@
 
 @while(have_posts())
     {!! the_post() !!}
-
     @include('partials.article')
 @endwhile
+
 @include('components.dynamic-sidebar', ['id' => 'content-area'])
 @stop
 
