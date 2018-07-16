@@ -36,10 +36,25 @@ class Filters
         //Body classes (removing material design, this is flat)
         add_filter('body_class', array($this, 'wpAddBodyClass'));
 
-
-        add_filter('acf/load_field/name=footer_layout', array($this, 'addDunkersLayoutOption'));
+        //Child theme header option
         add_filter('acf/load_field/name=header_layout', array($this, 'addDunkersLayoutOption'));
+
+        //Header class (can maybe be removed)
         add_filter('Views/Partials/Header/HeaderClass', array($this, 'addHeaderClass'));
+
+        //Main layout columns
+        add_filter('Municipio/Controller/BaseController/Layout', array($this, 'setMainLayout'), 11, 3);
+
+    }
+
+    public function setMainLayout($classes, $sidebarLeft, $sidebarRight)
+    {
+        if (isset($classes['sidebarLeft']) && $classes['sidebarLeft']) {
+            $classes['sidebarLeft'] = 'grid-xs-12 grid-md-4 grid-lg-3 hidden-xs hidden-sm';
+        }
+        $classes['content'] = 'grid-xs-12 grid-md-auto';
+
+        return $classes;
     }
 
     public function addHeaderClass($class)
