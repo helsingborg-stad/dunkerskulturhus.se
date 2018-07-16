@@ -1542,6 +1542,9 @@ html.translated-ltr #site-header {
   border: none;
   border-radius: 0; }
 
+.is-child-theme .btn.btn-primary {
+  background-color: #1e1e1e; }
+
 .is-child-theme .box-panel .widgettitle .rsswidget:first-child {
   display: none; }
 
