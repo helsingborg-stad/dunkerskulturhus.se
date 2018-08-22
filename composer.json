@@ -36,7 +36,8 @@
         "wpackagist-plugin/stream": "^3.0.4",
         "wpackagist-plugin/wp-nested-pages": "^1.5.4",
         "wpackagist-plugin/rest-api": "2.0-beta13",
-        "helsingborg-stad/api-event-manager-integration": "^0.5.5"
+        "helsingborg-stad/api-event-manager-integration": "^0.5.5",
+        "helsingborg-stad/google-analythics": "^1.0"
     },
 
     "extra": {
