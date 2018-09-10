@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b9dc79f32a3aaa14f7f004ab890bce8",
+    "content-hash": "c633ef8b14eb5baacb7d7100be2c82ae",
     "packages": [
         {
             "name": "aristath/kirki",
@@ -763,6 +763,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -773,10 +774,6 @@
                 }
             ],
             "description": "Force users to use ssl",
-            "support": {
-                "source": "https://github.com/helsingborg-stad/force-ssl/tree/1.0.19",
-                "issues": "https://github.com/helsingborg-stad/force-ssl/issues"
-            },
             "time": "2017-05-26T11:57:48+00:00"
         },
         {
@@ -945,6 +942,7 @@
                 "shasum": ""
             },
             "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -955,10 +953,6 @@
                 }
             ],
             "description": "WordPress plugin that handles opening hours and exeptions.",
-            "support": {
-                "source": "https://github.com/helsingborg-stad/open-hours/tree/1.0.3",
-                "issues": "https://github.com/helsingborg-stad/open-hours/issues"
-            },
             "time": "2016-11-09T16:00:11+00:00"
         },
         {
@@ -979,6 +973,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -993,10 +988,6 @@
                 }
             ],
             "description": "Import events from xcap (mittkulturkort.se)",
-            "support": {
-                "source": "https://github.com/helsingborg-stad/xcap-import/tree/1.0.10",
-                "issues": "https://github.com/helsingborg-stad/xcap-import/issues"
-            },
             "time": "2017-05-16T11:19:11+00:00"
         },
         {
@@ -2195,6 +2186,26 @@
             "homepage": "https://wordpress.org/plugins/all-in-one-seo-pack/"
         },
         {
+            "name": "wpackagist-plugin/classic-editor",
+            "version": "0.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-editor/",
+                "reference": "tags/0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.0.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-editor/"
+        },
+        {
             "name": "wpackagist-plugin/rest-api",
             "version": "2.0-beta13",
             "source": {
@@ -2205,7 +2216,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/rest-api.2.0-beta13.zip",
-                "reference": "tags/2.0-beta13",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -2265,7 +2276,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-editor-widget.0.5.5.zip",
-                "reference": "tags/0.5.5",
+                "reference": null,
                 "shasum": null
             },
             "require": {
