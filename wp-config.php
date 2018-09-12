@@ -28,6 +28,16 @@ require_once 'config/update.php';
 require_once 'config/upload.php';
 
 /**
+ * SSL Settings
+ *
+ * To enable this site as a multisite please rename the config/ssl-example.php file to
+ * ssl.php, then go ahead and edit the configurations
+ */
+if (file_exists(__DIR__ . '/config/ssl.php')) {
+    require_once 'config/ssl.php';
+}
+
+/**
  * Multisite settings
  *
  * To enable this site as a multisite please rename the config/multisite-example.php file to
