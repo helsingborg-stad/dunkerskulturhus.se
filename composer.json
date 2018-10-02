@@ -24,7 +24,6 @@
         "johnpbloch/wordpress": "^4.9.4",
         "helsingborg-stad/modularity": ">=1.0.0",
         "helsingborg-stad/municipio": ">=1.0.0",
-        "helsingborg-stad/xcap-import": ">=1.0.0",
         "helsingborg-stad/lix-calculator": ">=1.0.1",
         "helsingborg-stad/open-hours": ">=1.0.0",
         "helsingborg-stad/custom-short-links": ">=1.0.0",
