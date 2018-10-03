@@ -57,6 +57,14 @@ if (file_exists(__DIR__ . '/config/developer.php')) {
     require_once 'config/developer.php';
 }
 
+/**
+ * SSL Config
+ *
+ */
+if (file_exists(__DIR__ . '/config/ssl.php')) {
+    require_once 'config/ssl.php';
+}
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
