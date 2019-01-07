@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c87b010d6386687bbf9d3a899488e41",
+    "content-hash": "99ddf850e59070856eb43c7f78a3610b",
     "packages": [
         {
             "name": "aristath/kirki",
@@ -836,6 +836,34 @@
             ],
             "description": "WordPress plugin that calculates the lix value of your post's content.",
             "time": "2018-04-25T07:02:01+00:00"
+        },
+        {
+            "name": "helsingborg-stad/media-usage",
+            "version": "1.3.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/helsingborg-stad/media-usage.git",
+                "reference": "f44a16a6997f1eb267d2d03d43113417ffbf851e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/helsingborg-stad/media-usage/zipball/f44a16a6997f1eb267d2d03d43113417ffbf851e",
+                "reference": "f44a16a6997f1eb267d2d03d43113417ffbf851e",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikolas Ramstedt",
+                    "email": "nikolas.ramstedt@helsingborg.se"
+                }
+            ],
+            "description": "Track the use of attachments across posts, meta and options",
+            "time": "2018-11-06T08:31:47+00:00"
         },
         {
             "name": "helsingborg-stad/modularity",
@@ -2324,26 +2352,6 @@
             "homepage": "https://wordpress.org/plugins/autodescription/"
         },
         {
-            "name": "wpackagist-plugin/elasticpress",
-            "version": "2.6.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/elasticpress/",
-                "reference": "tags/2.6.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elasticpress.2.6.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/elasticpress/"
-        },
-        {
             "name": "wpackagist-plugin/gravity-forms-no-captcha-recaptcha",
             "version": "1.0.7",
             "source": {
@@ -2402,26 +2410,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/rest-api/"
-        },
-        {
-            "name": "wpackagist-plugin/stream",
-            "version": "3.2.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/stream/",
-                "reference": "tags/3.2.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/stream.3.2.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/stream/"
         },
         {
             "name": "wpackagist-plugin/varnish-http-purge",
