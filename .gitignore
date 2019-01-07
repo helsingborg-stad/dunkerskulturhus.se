@@ -3,6 +3,7 @@
 /config/salts.php
 /config/developer.php
 /config/multisite.php
+/config/ssl.php
 
 # Plugins
 /wp-content/plugins/*
