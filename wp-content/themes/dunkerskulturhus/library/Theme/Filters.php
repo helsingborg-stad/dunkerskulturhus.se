@@ -43,7 +43,7 @@ class Filters
         add_filter('Views/Partials/Header/HeaderClass', array($this, 'addHeaderClass'));
 
         //Main layout columns
-        //add_filter('Municipio/Controller/BaseController/Layout', array($this, 'setMainLayout'), 11, 3);
+        add_filter('Municipio/Controller/BaseController/Layout', array($this, 'setMainLayout'), 11, 3);
 
     }
 
@@ -52,7 +52,13 @@ class Filters
         if (isset($classes['sidebarLeft']) && $classes['sidebarLeft']) {
             $classes['sidebarLeft'] = 'grid-xs-12 grid-md-4 grid-lg-3 hidden-xs hidden-sm';
         }
-        $classes['content'] = 'grid-xs-12 grid-md-auto';
+
+        if ($sidebarRight) {
+            $classes['content'] = 'grid-xs-12 grid-md-8 grid-lg-6';
+            $classes['sidebarRight'] = 'grid-xs-12 grid-md-4 grid-lg-3 hidden-md';
+        } else {
+            $classes['content'] = 'grid-xs-12 grid-md-8 grid-lg-9';
+        }
 
         return $classes;
     }
