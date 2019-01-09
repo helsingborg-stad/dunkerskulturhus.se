@@ -43,7 +43,7 @@ class Filters
         add_filter('Views/Partials/Header/HeaderClass', array($this, 'addHeaderClass'));
 
         //Main layout columns
-        add_filter('Municipio/Controller/BaseController/Layout', array($this, 'setMainLayout'), 11, 3);
+        //add_filter('Municipio/Controller/BaseController/Layout', array($this, 'setMainLayout'), 11, 3);
 
     }
 
