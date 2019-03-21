@@ -2,7 +2,7 @@
 
 namespace Dunkers\Controller;
 
-class SingleEvent extends \Municipio\Controller\SingleEvent
+class SingleEvent extends \Municipio\Controller\BaseController
 {
     public function init()
     {
