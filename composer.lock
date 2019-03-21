@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "99ddf850e59070856eb43c7f78a3610b",
+    "content-hash": "cfdc2ea222225a3c19016da741c89631",
     "packages": [
         {
             "name": "aristath/kirki",
@@ -651,16 +651,16 @@
         },
         {
             "name": "helsingborg-stad/api-event-manager-integration",
-            "version": "0.9.5",
+            "version": "0.6.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/helsingborg-stad/api-event-manager-integration.git",
-                "reference": "21b0232859e80641f776731018173617b1b5325a"
+                "reference": "957b31a7943895c2bcd6ba816861421e5349c062"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helsingborg-stad/api-event-manager-integration/zipball/21b0232859e80641f776731018173617b1b5325a",
-                "reference": "21b0232859e80641f776731018173617b1b5325a",
+                "url": "https://api.github.com/repos/helsingborg-stad/api-event-manager-integration/zipball/957b31a7943895c2bcd6ba816861421e5349c062",
+                "reference": "957b31a7943895c2bcd6ba816861421e5349c062",
                 "shasum": ""
             },
             "require": {
@@ -679,7 +679,7 @@
                 }
             ],
             "description": "Import and display events from Event Manager API.",
-            "time": "2019-03-18T14:50:08+00:00"
+            "time": "2019-02-13T13:34:19+00:00"
         },
         {
             "name": "helsingborg-stad/content-scheduler",
