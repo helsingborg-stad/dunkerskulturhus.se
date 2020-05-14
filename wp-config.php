@@ -28,6 +28,15 @@ require_once __DIR__ . '/config/update.php';
 require_once __DIR__ . '/config/upload.php';
 
 /**
+ * Search settings
+ *
+ * Searchengine configuration. 
+ */
+if (file_exists(__DIR__ . '/config/search.php')) {
+    require_once 'config/search.php';
+}
+
+/**
  * SSL Settings
  *
  * To enable this site as a multisite please rename the config/ssl-example.php file to
