@@ -9,6 +9,8 @@ class Navigation
         $this->registerMenus();
 
         add_filter('nav_menu_css_class', array($this, 'setCurrentlyActiveItem'), 10, 3);
+
+        add_action('loop_start', array($this, 'renderEventFilterMenu'));
     }
 
     /**
@@ -36,5 +38,17 @@ class Navigation
         register_nav_menus(array(
             'event-categories' => __('Evenemangskategorier', 'dunkers')
         ));
+    }
+
+    public function renderEventFilterMenu($query) {
+        if(!$query->is_main_query()) {
+          return; 
+        }
+  
+        wp_nav_menu(array(
+          'menu' => 'event-categories',
+          'menu_class' => 'navbar-event-categories'
+        ));
+  
     }
 }

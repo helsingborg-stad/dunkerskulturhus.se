@@ -8,6 +8,5 @@ class App
         new \Dunkers\Theme\Enqueue();
         new \Dunkers\Theme\Navigation();
         new \Dunkers\Theme\Filters();
-
     }
 }
