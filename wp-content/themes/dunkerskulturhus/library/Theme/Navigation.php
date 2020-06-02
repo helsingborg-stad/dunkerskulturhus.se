@@ -44,6 +44,10 @@ class Navigation
         if(!$query->is_main_query()) {
           return; 
         }
+
+        if(!is_post_type_archive('event')) {
+            return; 
+        }
   
         wp_nav_menu(array(
           'menu' => 'event-categories',

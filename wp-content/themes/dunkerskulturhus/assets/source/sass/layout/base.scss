@@ -44,3 +44,9 @@ h2 + ul.image-gallery.grid.grid-gallery {
     padding-top: 8px;
 }
 }
+
+&.post-type-archive-event .s-content {
+    width: 100% !important;
+    max-width: 100%;
+    flex: 1;
+}
