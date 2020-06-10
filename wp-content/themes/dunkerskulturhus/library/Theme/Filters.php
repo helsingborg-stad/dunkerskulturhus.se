@@ -155,7 +155,7 @@ class Filters
      */
     public function mobileMenuBreakpoint($classes)
     {
-        return "hidden-md hidden-lg hidden-xl hidden-xxl";
+        return "hidden-lg hidden-xl hidden-xxl";
     }
 
     /**
@@ -164,7 +164,7 @@ class Filters
      */
     public function desktopMenuBreakpoint($classes)
     {
-        return "hidden-xs hidden-sm";
+        return "hidden-xs hidden-sm hidden-md";
     }
 
     /**
