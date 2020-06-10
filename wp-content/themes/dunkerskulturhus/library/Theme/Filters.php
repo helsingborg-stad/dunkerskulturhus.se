@@ -146,7 +146,10 @@ class Filters
      */
     public function overrideSliderImageSize($size)
     {
-        return array(1300,731);
+        if(is_array($size) && array_pop($size) == 1250) {
+            return array(1920, 576);
+        }
+        return $size;
     }
 
     /**
