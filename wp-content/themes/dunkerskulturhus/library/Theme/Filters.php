@@ -44,7 +44,6 @@ class Filters
 
         //Main layout columns
         add_filter('Municipio/Controller/BaseController/Layout', array($this, 'setMainLayout'), 11, 3);
-
     }
 
     public function setMainLayout($classes, $sidebarLeft, $sidebarRight)
@@ -74,6 +73,7 @@ class Filters
     {
         if (get_field('theme_mode', 'options') >= 2) {
             $field['choices']['dunkers'] = 'Dunkers (Child theme template)';
+            $field['choices']['dunkers-mega-menu'] = 'Dunkers Mega Menu (Child theme template)';
         }
 
         return $field;
@@ -146,7 +146,7 @@ class Filters
      */
     public function overrideSliderImageSize($size)
     {
-        if(is_array($size) && array_pop($size) == 1250) {
+        if (is_array($size) && array_pop($size) == 1250) {
             return array(1920, 576);
         }
         return $size;
