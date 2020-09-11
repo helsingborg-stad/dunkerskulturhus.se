@@ -1,5 +1,5 @@
 .box-panel {
-    border: 3px solid $black;
+    border: 1px solid $black;
 
     .box-title,
     .widgettitle,
@@ -85,10 +85,6 @@
     ul li {
         padding: 10px; 
     }
-}
-
-.box-panel ul:not(.social-feed-gallery) li + li {
-    border-top: 1px solid $black !important;
 }
 
 .box-panel ul:not(.social-feed-gallery) li {
