@@ -8,17 +8,17 @@
 
                     {!! municipio_get_logotype(get_field('header_logotype', 'option'), get_field('logotype_tooltip', 'option')) !!}
 
-                    {!! $navigation['mainMenu'] !!}
-                    <a href="#mobile-menu" data-target="#mobile-menu" class="{!! apply_filters('Municipio/mobile_menu_breakpoint','hidden-md hidden-lg'); !!} menu-trigger"><span class="menu-icon"></span></a>
+                    {{-- {!! $navigation['mainMenu'] !!} --}}
+                    <a href="#mobile-menu" data-target="#mobile-menu" class="menu-trigger"><span class="menu-icon"></span></a>
                 </div>
             </div>
         </div>
     </nav>
 
     @if (strlen($navigation['mobileMenu']) > 0)
-        <nav id="mobile-menu" class="nav-mobile-menu nav-toggle {!! apply_filters('Municipio/mobile_menu_breakpoint','hidden-md hidden-lg'); !!}">
+        <nav id="mobile-menu" class="nav-mobile-menu nav-toggle mega-menu">
             <div class="container u-p-0">
-                @include('partials.mobile-menu')
+                @include('partials.mega-menu')
             </div>
         </nav>
     @endif
