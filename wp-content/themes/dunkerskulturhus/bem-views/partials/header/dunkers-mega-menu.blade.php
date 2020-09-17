@@ -9,7 +9,7 @@
                     {!! municipio_get_logotype(get_field('header_logotype', 'option'), get_field('logotype_tooltip', 'option')) !!}
 
                     {{-- {!! $navigation['mainMenu'] !!} --}}
-                    <a href="#mobile-menu" data-target="#mobile-menu" class="menu-trigger"><span class="menu-trigger__label">Meny</span> <span class="menu-icon"></span></a>
+                    <a href="#mobile-menu" data-target="#mobile-menu" class="menu-trigger"><span class="menu-trigger__label">Meny</span><span class="menu-trigger__close">Stäng</span><span class="menu-icon"></span></a>
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
 
     @if (strlen($navigation['mobileMenu']) > 0)
         <nav id="mobile-menu" class="nav-mobile-menu nav-toggle mega-menu">
-            <div class="container u-p-0">
+            <div class="container">
                 @include('partials.mega-menu')
             </div>
         </nav>

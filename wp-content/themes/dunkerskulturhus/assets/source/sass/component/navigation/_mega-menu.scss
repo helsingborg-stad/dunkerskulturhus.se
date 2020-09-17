@@ -1,5 +1,99 @@
+#site-header.header-dunkers-mega-menu .navbar {
+    padding: 40px 0;
+}
+
+#site-header.header-dunkers-mega-menu .menu-trigger {
+    color: black;
+}
+
 .navbar-mainmenu.navbar-mainmenu--mega {
     .logotype {
         z-index: 999;
     }
+}
+
+#site-header.header-dunkers-mega-menu .mega-menu {
+    top: 109px;
+}
+
+.header-dunkers-mega-menu .menu-trigger {
+    font-family: "Lato", "Roboto", "Helvetica", "Arial";
+    .menu-trigger__label,
+    .menu-trigger__close {
+        z-index: 99;
+        position: relative;
+    }
+
+    .menu-trigger__label {
+        display: inline-block;
+    }
+    .menu-trigger__close {
+        display: none;
+    }
+
+    > span + span {
+        margin-left: 8px;
+    }
+}
+
+.header-dunkers-mega-menu .menu-trigger.open {
+    .menu-trigger__label {
+        display: none;
+    }
+    .menu-trigger__close {
+        display: inline-block;
+    }
+}
+
+.mega-menu .mega-menu__list {
+
+}
+
+.mega-menu .mega-menu__list, 
+.mega-menu .mega-menu__sublist {
+    text-align: left;
+}
+
+.mega-menu .mega-menu__sublist {}
+
+.mega-menu .mega-menu__item {
+    font-family: "Lato", "Roboto", "Helvetica", "Arial";
+}
+
+.mega-menu .mega-menu__item.mega-menu__item--parent > a {
+    text-transform: uppercase;
+    color: black;
+    padding: 4px 12px;
+    border: solid 2px black;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+}
+
+.mega-menu .mega-menu__item.mega-menu__item--parent > a > i {
+    font-size: 15px;
+    line-height: 1;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    margin-left: 8px;
+}
+
+
+
+.mega-menu .mega-menu__item.mega-menu__item--child {
+
+}
+
+.mega-menu .mega-menu__item.mega-menu__item--child a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: inline-block;
+    // margin-top: 12px;
+}
+
+
+
+.mega-menu form.search {
+    max-width: 100%;
 }

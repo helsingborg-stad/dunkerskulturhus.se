@@ -1,4 +1,4 @@
-<form class="search" method="get" action="/">
+<form class="search u-mb-6" method="get" action="/">
     <label for="searchkeyword-mobile" class="sr-only">{{ get_field('search_label_text', 'option') ? get_field('search_label_text', 'option') : 'Search' }}</label>
 
     <div class="input-group">
@@ -13,12 +13,12 @@
 @if (!empty($megaMenuItems))
     <ul class="mega-menu__list grid">
         @foreach($megaMenuItems as $item)
-            <li id="mega-menu-item-{{$item->ID}}" class="mega-menu__item mega-menu__item--parent grid-xs-12 grid-md-6 grid-lg-4 u-mb-3 {{$item->classNames}}">
-                <a href="{{$item->url}}"><h3>{{$item->title}}</h3></a>
+            <li id="mega-menu-item-{{$item->ID}}" class="mega-menu__item mega-menu__item--parent grid-xs-12 grid-md-6 grid-lg-4 u-mb-6 {{$item->classNames}}">
+                <a href="{{$item->url}}">{{$item->title}} <i class="pricon pricon-angle-right"></i></a>
                 
                 {{-- Children --}}
                 @if (!empty($item->children))
-                    <ul class="mega-menu__sublist u-mt-2">
+                    <ul class="mega-menu__sublist u-mt-3">
                         @foreach($item->children as $child)
                             <li id="mega-menu-item-{{$item->ID}}" class="mega-menu__item mega-menu__item--child {{$child->classNames}}">
                                 <a href="{{$child->url}}">{{$child->title}}</a>
