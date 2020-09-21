@@ -13,7 +13,7 @@
     @if ($singleHeroImage)
 
             <div class="o-overlay">
-            <div class="slider  ratio-16-9@md ratio-10-3">
+            <div class="slider ratio-16-9@md ratio-16-9">
                 <div class="slide o-cover"  style="background-image:url('{{ $singleHeroImage }}');">
                     <div>
                         <span class="text-block">{{ the_title() }}<br>{{ \Municipio\Helper\Dt::toStringFormat(strtotime($occasion['start_date'])) }}

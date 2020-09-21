@@ -18,7 +18,8 @@
 
 .is-child-theme {
 	@import 'layout/base';
-	@import 'layout/typography';
+    @import 'layout/content';
+    @import 'layout/typography';
 	@import 'layout/header';
 	@import 'layout/mainmenu';
 	@import 'layout/footer';

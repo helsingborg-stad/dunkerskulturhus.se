@@ -1,7 +1,7 @@
 <?php if (isset($fields->view_as) && $fields->view_as == 'list') : ?>
 
     <div class="box box-panel">
-        <h4 class="box-title"><?php echo $module->post_title; ?></h4>
+        <h2 class="box-title"><?php echo $module->post_title; ?></h2>
         <ul>
             <?php
             foreach ($posts as $post) :

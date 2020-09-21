@@ -50,9 +50,13 @@ a.box {
 }
 
 .box-border {
-    border: 3px solid $black;
+    border: 1px solid $black;
 }
 
 h5.box-index-title {
     font-weight: bold;
+}
+
+.box-panel h4.box-title {
+    font-weight: 200;
 }

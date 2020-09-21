@@ -364,3 +364,7 @@
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+&:not(.home) .hero .slider.ratio-16-9 {
+    max-height: 140vh;
+}

@@ -1,0 +1,21 @@
+.widget_calendar article:not(.full) caption,
+article:not(.full) .widget_calendar caption,
+article:not(.full) .wp-caption,
+article:not(.full) [class^="mod-"],
+article:not(.full) blockquote,
+article:not(.full) h1,
+article:not(.full) h2,
+article:not(.full) h3,
+article:not(.full) h4,
+article:not(.full) h5,
+article:not(.full) h6,
+article:not(.full) li,
+article:not(.full) p {
+    max-width: none;
+}
+
+
+.modularity-mod-event h4.box-title {
+    font-size: 2.2em;
+}
+
