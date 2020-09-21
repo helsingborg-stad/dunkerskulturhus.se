@@ -20,7 +20,7 @@
     {!! wp_head() !!}
 
 </head>
-<body class="{{ $bodyClass }}">
+<body class="{{ $bodyClass }}" tabindex="-1">
 @if (get_field('show_google_translate', 'option') == 'header')
             @include('partials.translate')
 @endif
