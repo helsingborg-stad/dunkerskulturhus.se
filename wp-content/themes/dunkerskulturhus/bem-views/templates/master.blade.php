@@ -49,11 +49,11 @@
                     @endif
 
                     {{-- Sidebar left --}}
-                    @hasSection('sidebar-left')
+                    {{-- @hasSection('sidebar-left')
                         <div class="{{$layout['sidebarLeft']}} s-sidebar-left">
                             @yield('sidebar-left')
                         </div>
-                    @endif
+                    @endif --}}
 
                     {{-- Content --}}
                     <div class="{{$layout['content']}} s-content">
