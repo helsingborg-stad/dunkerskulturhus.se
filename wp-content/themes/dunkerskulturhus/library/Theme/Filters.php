@@ -48,15 +48,11 @@ class Filters
 
     public function setMainLayout($classes, $sidebarLeft, $sidebarRight)
     {
-        if (isset($classes['sidebarLeft']) && $classes['sidebarLeft']) {
-            $classes['sidebarLeft'] = 'grid-xs-12 grid-md-4 grid-lg-3 hidden-xs hidden-sm';
-        }
-
         if ($sidebarRight) {
-            $classes['content'] = 'grid-xs-12 grid-md-8 grid-lg-6';
-            $classes['sidebarRight'] = 'grid-xs-12 grid-md-4 grid-lg-3 hidden-md';
+            $classes['content'] = 'grid-xs-12 grid-md-8';
+            $classes['sidebarRight'] = 'grid-xs-12 grid-md-4 hidden-md';
         } else {
-            $classes['content'] = 'grid-xs-12 grid-md-8 grid-lg-9';
+            $classes['content'] = 'grid-xs-12 grid-md-12';
         }
 
         return $classes;
