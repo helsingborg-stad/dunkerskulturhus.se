@@ -60,3 +60,16 @@ h5.box-index-title {
 .box-panel h4.box-title {
     font-weight: 200;
 }
+
+.modularity-mod-text {
+    .box-content ul:not(.social-feed) li + li {
+        padding-top: 0;
+    }
+}
+
+.box-content a {
+    text-decoration: underline;
+    &:hover {
+        color: $black;
+    }
+} 
