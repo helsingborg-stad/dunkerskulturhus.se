@@ -41,7 +41,9 @@
         "helsingborg-stad/active-directory-api-wp-integration": ">=1.0.0",
         "wpackagist-plugin/autodescription": "^3.2",
         "helsingborg-stad/algolia-index": "^1.7",
-        "helsingborg-stad/algolia-index-modularity-addon": "^1.0"
+        "helsingborg-stad/algolia-index-modularity-addon": "^1.0",
+        "wpackagist-plugin/nginx-helper": "^2.2"
+
     },
     "extra": {
         "wordpress-install-dir": "wp",

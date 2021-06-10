@@ -21,3 +21,8 @@ if (!in_array(array_shift(explode(".", $_SERVER['HTTP_HOST'])), array("test", "b
 * @var string
 */
 define('WP_CACHE_KEY_SALT', NONCE_KEY);
+
+/**
+ * Nginx helper, cache path.
+ */
+define('RT_WP_NGINX_HELPER_CACHE_PATH', '/var/lib/nginx/fastcgi_cache/');
